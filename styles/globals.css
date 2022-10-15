@@ -1,26 +1,49 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cards {
+  background-image: url("/images/frame.svg");
+  background-repeat: no-repeat;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.rectangle {
+  background-image: url("/images/rectangle.svg");
+  background-repeat: no-repeat;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #11d811;
 }
 
 * {
-  box-sizing: border-box;
+  font-family: "Tomorrow", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+  h1 {
+    @apply text-[16px] text-white font-[600];
   }
-  body {
-    color: white;
-    background: black;
+
+  h2 {
+    @apply text-[16px] text-white font-[600];
+  }
+
+  h3 {
+    @apply text-[12px] font-[500];
+  }
+
+  h4 {
+    @apply text-[14px] text-[#737BAE]  font-[600];
+  }
+
+  h5 {
+    @apply text-[13px] text-[#5A5F7D]  font-[600] mt-2 mb-2;
   }
 }
