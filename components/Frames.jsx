@@ -81,7 +81,7 @@ const Home = () => {
               width={20}
               height={20}
             />
-            <h1>Trending Assets</h1>
+            <h1>Trending Asset</h1>
           </div>
 
           <CardMapping />
